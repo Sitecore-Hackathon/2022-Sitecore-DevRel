@@ -75,9 +75,9 @@ f. ex.
 3. Run `Start-Hackathon.ps1`
 4. Ensure all containers are healthy
 5. Deserialise Sitecore content by running the following commands from the root of the project
-  - `dotnet tool restore`
-  - `dotnet sitecore login --cm https://cm.sitecoredevrel.localhost/ --auth https://id.sitecoredevrel.localhost/ --allow-write true`
-  - `dotnet sitecore ser push --publish`
+   * `dotnet tool restore`
+   * `dotnet sitecore login --cm https://cm.sitecoredevrel.localhost/ --auth https://id.sitecoredevrel.localhost/ --allow-write true`
+   * `dotnet sitecore ser push --publish`
 
 6. From the command line, navigate to the `/src/project/NextStore/rendering` folder.
 7. Run:
