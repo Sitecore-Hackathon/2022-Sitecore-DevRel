@@ -52,5 +52,9 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 
-#allow nextjs packages folder
+#allow nextjs packages folders
 !static_nextjs_commerce/packages
+!src/Project/NextStore/rendering/packages
+src/Project/NextStore/rendering/packages/*/node_modules
+src/Project/NextStore/rendering/packages/*/dist
+src/Project/NextStore/rendering/packages/*/.turbo
