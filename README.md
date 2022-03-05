@@ -44,7 +44,10 @@ _You can alternately paste a [link here](#docs) to a document within this repo c
 
 ⟹ Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
+- Dependencies:
+  - npm 8.3.1 
+  - yarn 1.22.17
+  - nodejs 16.14.0  
 - Or other modules that must be installed
 - Or services that must be enabled/configured
 
