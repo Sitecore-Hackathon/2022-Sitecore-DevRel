@@ -14,7 +14,15 @@
 ⟹ Sitecore DevRel
 
 ## Category
-⟹ Write the name of the selected category
+⟹  
+
+1. Build an e-commerce Minimum Viable Product to sell community t-shirts
+   * The submissino must include the following technologies:
+     * Sitecore XM - Rendering host (.net or jss)
+     * Sitecore Send
+     * Sitecore Order Cloud
+   * Authentication is not required
+   * Payment processing is not required
 
 ## Description
 ⟹ Write a clear description of your hackathon entry.  
