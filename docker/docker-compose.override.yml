@@ -86,32 +86,32 @@ services:
   # (OPTIONAL); Uncomment below rendering image to run your jss app in a container.
   #   Set JSS_PROJECT_ROOTFOLDER in .env file with (relative) path to your jss app folder.
   #   Set SITECORE_API_KEY and JSS_EDITING_SECRET, change naming below for other than nextjs
-  rendering:
-    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering:${VERSION:-latest}
-    build:
-      context: ./build/rendering
-      args:
-        PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
-        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
-    # volumes:
-    #   - ${JSS_PROJECT_ROOTFOLDER}:C:\app
-    mem_limit: ${MEM_LIMIT_RENDERING:-4GB}
-    ports:
-      - 3000:3000  
-    depends_on:
-      - cm
-      - nodejs
-    environment:
-      NODE_ENV: ${NODE_ENV}
-      NEXT_PUBLIC_PUBLIC_URL: "https://${RENDERING_HOST}"
-      NEXT_PUBLIC_SITECORE_API_KEY: ${SITECORE_API_KEY}
-      NEXT_PUBLIC_SITECORE_API_HOST: http://cm
-      JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.rendering-secure.entrypoints=websecure"
-      - "traefik.http.routers.rendering-secure.rule=Host(`${RENDERING_HOST}`)"
-      - "traefik.http.routers.rendering-secure.tls=true"      
+  # rendering:
+  #   image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering:${VERSION:-latest}
+  #   build:
+  #     context: ./build/rendering
+  #     args:
+  #       PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
+  #       SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+  #   # volumes:
+  #   #   - ${JSS_PROJECT_ROOTFOLDER}:C:\app
+  #   mem_limit: ${MEM_LIMIT_RENDERING:-4GB}
+  #   ports:
+  #     - 3000:3000  
+  #   depends_on:
+  #     - cm
+  #     - nodejs
+  #   environment:
+  #     NODE_ENV: ${NODE_ENV}
+  #     NEXT_PUBLIC_PUBLIC_URL: "https://${RENDERING_HOST}"
+  #     NEXT_PUBLIC_SITECORE_API_KEY: ${SITECORE_API_KEY}
+  #     NEXT_PUBLIC_SITECORE_API_HOST: http://cm
+  #     JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.rendering-secure.entrypoints=websecure"
+  #     - "traefik.http.routers.rendering-secure.rule=Host(`${RENDERING_HOST}`)"
+  #     - "traefik.http.routers.rendering-secure.tls=true"      
 
   cm:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-cm:${SITECORE_VERSION}
