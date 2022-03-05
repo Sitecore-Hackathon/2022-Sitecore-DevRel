@@ -1,0 +1,75 @@
+﻿---
+ID: "f81d8241-e443-581b-92c8-ad5bd469feca"
+Parent: "0483f720-267a-5d96-94c0-6bca3b978171"
+Template: "0483f720-267a-5d96-94c0-6bca3b978171"
+Path: /sitecore/templates/Project/NextStore/App Route/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{0483F720-267A-5D96-94C0-6BCA3B978171}"
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{7FE046E7-E256-5827-99E2-147445498A49}">
+        <p
+          uid="{0AE8573B-3E90-5BC7-B274-4CA2C39336F1}"
+          key="jss-main"
+          md="{A1E926B2-53E0-5481-968D-680D47F01634}" />
+        <p
+          uid="{78D7BD76-601F-51B0-ABAA-489ACAEF60EC}"
+          key="jss-tabs"
+          md="{2DD09458-EAB2-5477-A31B-86BE7FF5C37B}" />
+        <p
+          uid="{8C9DB920-D90A-5E57-9E0D-403FA37A02BD}"
+          key="jss-graphql-layout"
+          md="{6C035264-228C-5C71-BB23-6D2585D2C571}" />
+        <p
+          uid="{DF8C5970-2696-5F22-B9AB-D0C62567F70D}"
+          key="jss-styleguide-layout"
+          md="{73E777F2-C1AE-5E09-A82A-242303B5BE78}" />
+        <p
+          uid="{AA341E07-286F-5366-ABC1-3392B9E7A5D3}"
+          key="jss-styleguide-section"
+          md="{7E1BC443-7F70-537C-B8AD-D7EFD1CF6079}" />
+        <p
+          uid="{19F9C624-ADA4-5493-B9B7-1BDB1955BB54}"
+          key="jss-header"
+          md="{FF5FA2BD-76AD-5448-BA32-7D18167911EF}" />
+        <p
+          uid="{BD956987-756A-50EE-9E82-A25EE6323ACA}"
+          key="jss-reuse-example"
+          md="{912B49AE-8F05-540A-ACF5-EB8B52786C75}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220305T051501Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\JssImport
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1e45b7cc-973f-4d22-92f1-c3bfc8ef7026"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220305T051514Z

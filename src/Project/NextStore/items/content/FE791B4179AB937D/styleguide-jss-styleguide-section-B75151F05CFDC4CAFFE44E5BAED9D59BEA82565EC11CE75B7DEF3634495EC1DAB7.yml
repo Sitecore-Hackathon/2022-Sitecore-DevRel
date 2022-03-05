@@ -1,0 +1,37 @@
+﻿---
+ID: "0455ee29-5cad-51ad-a8ba-2b7f405d1bb3"
+Parent: "c0b3a774-c2f2-5a51-8a89-b1ed3cfc6629"
+Template: "1ea17c94-2e68-5e8b-b08c-9e332b30293a"
+Path: "/sitecore/content/NextStore/home/styleguide/Page Components/styleguide-jss-styleguide-section-B73482E131E5A083D77A50554BC74A4758E29636DF6824F6E2F272EE778C28A095/styleguide-jss-styleguide-section-B75151F05CFDC4CAFFE44E5BAED9D59BEA82565EC11CE75B7DEF3634495EC1DAB7"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-ItemLink-10-item-0"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220305T051518Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cb36f13a-613e-45ba-82ed-a25e78c16fad"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220305T051518Z
+    - ID: "dfc02046-bfc5-53a0-a1b0-83d1a12fcc73"
+      Hint: textField
+      Value: Referenced item textField

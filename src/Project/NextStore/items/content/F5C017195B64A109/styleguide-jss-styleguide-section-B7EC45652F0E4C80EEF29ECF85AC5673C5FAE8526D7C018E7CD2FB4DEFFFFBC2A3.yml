@@ -1,0 +1,48 @@
+﻿---
+ID: "95cc8832-b3fe-54f4-922c-c5b31c68e4c9"
+Parent: "accd6048-995a-5898-85a7-8c35786d3261"
+Template: "7bf27bf1-d253-5444-9cc6-395591e0b454"
+Path: "/sitecore/content/NextStore/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7EC45652F0E4C80EEF29ECF85AC5673C5FAE8526D7C018E7CD2FB4DEFFFFBC2A3"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Checkbox-7"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f8a8377-edb1-558e-add4-7804921214aa"
+      Hint: checkbox2
+      Value: 0
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220305T051517Z
+    - ID: "3344564d-fa75-56c0-9622-73c4e6018fda"
+      Hint: heading
+      Value: Checkbox
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "444129d2-8de6-54d2-a6bb-5cd8f633c8a5"
+      Hint: checkbox
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ba9d41aa-6a22-40e5-82bc-7dc4d8cd94d8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "c4983293-7d81-5aaf-8543-1e5977d1c647"
+      Hint: description
+      Value: |
+        <small>Note: Sitecore does not support inline editing of Checkbox fields. The value must be edited in Experience Editor by using the edit rendering fields button (looks like a pencil) with the whole component selected.</small>
+        
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220305T051517Z

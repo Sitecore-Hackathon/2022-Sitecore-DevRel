@@ -1,3 +1,4 @@
+require('win-ca');
 const jssConfig = require('./src/temp/config');
 const packageConfig = require('./package.json').config;
 const {

@@ -1,0 +1,50 @@
+﻿---
+ID: "7816638b-7c2e-59ff-89a7-21da397d6883"
+Parent: "f10d02d3-7009-57a0-9558-987c4ce7da2c"
+Template: "0483f720-267a-5d96-94c0-6bca3b978171"
+Path: /sitecore/content/NextStore/home
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{2C4A53CC-9DA8-5F51-9D79-6EE2FC671B2D}"
+              p:after="*[1=2]"
+              s:rname="ContentBlock"
+              s:ds="{01690D31-155D-5503-A206-59E79CF7D22F}"
+              s:id="{84BC3CC0-8C66-5545-8327-81C6487B33B0}"
+              s:par=""
+              s:ph="/jss-main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220305T051515Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ffa7af89-93c3-4586-b300-28bc124f86cf"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "be979ae7-d248-5501-a09c-02ee93c17b76"
+      Hint: pageTitle
+      Value: Welcome to Sitecore JSS
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220305T051515Z
