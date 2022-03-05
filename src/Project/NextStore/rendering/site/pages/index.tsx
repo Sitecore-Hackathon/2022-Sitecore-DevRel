@@ -2,11 +2,10 @@ import commerce from '@lib/api/commerce'
 import { Layout, PageTitle } from '@components/common'
 import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
+import { getRouteDetailsFromXM, XmRouteDetails } from '../lib/content/xm-gql'
 
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
-import axios from "axios";
-
 
 export async function getStaticProps({
   preview,
@@ -26,35 +25,7 @@ export async function getStaticProps({
   const { products } = await productsPromise
   const { pages } = await pagesPromise
   const { categories, brands } = await siteInfoPromise
-
-
-  const query = `
-{
-  item(path: "/sitecore/content/NextStore/home") {
-    id
-    path
-    fields (ownFields:true) {
-      value
-      name
-    }
-    children {
-      name
-    }
-  }
-}
-`;
-
-// At request level
-const https = require('https');
-const agent = new https.Agent({  
-  rejectUnauthorized: false
-});
-
-  const response = await axios.post(`https://cm.sitecoredevrel.localhost/sitecore/api/graph/items/master?sc_apikey={AE4A222E-8270-4609-B82B-81B57E9414FF}`, {
-    query
-  }, { httpsAgent: agent });
-
-var gqlData = response.data; 
+  const xmRouteDetails: any = await getRouteDetailsFromXM("")
 
   return {
     props: {
@@ -62,7 +33,7 @@ var gqlData = response.data;
       categories,
       brands,
       pages,
-      gqlData
+      xmRouteDetails
     },
     revalidate: 60,
   }
@@ -70,11 +41,11 @@ var gqlData = response.data;
 
 export default function Home({
   products,
-  gqlData
+  xmRouteDetails
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageTitle text={gqlData.data.item.fields[0].value} />
+      <PageTitle text={xmRouteDetails.title} />
       <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
