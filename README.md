@@ -74,7 +74,7 @@ f. ex.
 2. Copy sitecore license.xml to `/docker/License` folder
 3. Run `Start-Hackathon.ps1`
 4. Ensure all containers are healthy
-5. Deserialise Sitecore content by running the following commands from the root of the project
+5. Deserialise Sitecore content by running the following commands from the root of the repo
    * `dotnet tool restore`
    * `dotnet sitecore login --cm https://cm.sitecoredevrel.localhost/ --auth https://id.sitecoredevrel.localhost/ --allow-write true`
    * `dotnet sitecore ser push --publish`
