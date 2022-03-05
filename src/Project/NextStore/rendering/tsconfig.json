@@ -9,6 +9,7 @@
       "@commerce": ["packages/commerce/src"],
       "@commerce/*": ["packages/commerce/src/*"],
       "@components/*": ["src/components/*"],
+      "@lib/*": ["src/lib/nextjs-commerce/*"],
       "@framework": ["packages\\ordercloud\\src"],
       "@framework/*": ["packages\\ordercloud\\src/*"]
     },
