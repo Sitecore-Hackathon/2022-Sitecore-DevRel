@@ -70,11 +70,16 @@ _Remove this subsection if your entry does not have any prerequisites other than
  
 f. ex. 
 
-1. Start docker environment using `.\Start-Hackathon.ps1`
-2. Open solution in Visual Studio and run build
-3. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-4. ...
-5. profit
+1. Clone the repository: `git clone https://github.com/Sitecore-Hackathon/2022-Sitecore-DevRel.git`.
+2. From the command line, navigate to the `/src/project/NextStore/rendering` folder.
+3. Run:
+   * `npm i`
+   * `yarn install`
+   * `yarn build`
+   * `yarn dev`
+4. In a web browser, navigate to [http://localhost3000](http://localhost3000).
+5. ...
+6. profit
 
 ### Configuration
 ⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
