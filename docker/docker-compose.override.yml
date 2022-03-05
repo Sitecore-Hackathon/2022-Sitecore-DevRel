@@ -130,7 +130,7 @@ services:
       - ${HOST_LICENSE_FOLDER}:c:\license
     environment:
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
-      SITECORE_DEVELOPMENT_PATCHES: CustomErrorsOff
+      SITECORE_DEVELOPMENT_PATCHES: CustomErrorsOff,DebugOn,OptimizeCompilationsOn
       JSS_Rendering_DEPLOYMENT_SECRET: ${JSS_Rendering_DEPLOYMENT_SECRET}
       SITECORE_JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
