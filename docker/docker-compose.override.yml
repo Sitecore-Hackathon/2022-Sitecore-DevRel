@@ -130,6 +130,9 @@ services:
     environment:
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
       SITECORE_DEVELOPMENT_PATCHES: CustomErrorsOff
+      JSS_Rendering_DEPLOYMENT_SECRET: ${JSS_Rendering_DEPLOYMENT_SECRET}
+      SITECORE_JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
     depends_on:
       - solution
     mem_limit: ${MEM_LIMIT_CM:-4GB}        
