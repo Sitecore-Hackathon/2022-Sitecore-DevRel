@@ -16,6 +16,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
+    <SitecoreRoleType>platform</SitecoreRoleType>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -58,10 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Sitecore.Kernel" />
-    <PackageReference Include="Sitecore.ContentSearch" />
-    <PackageReference Include="Sitecore.ContentSearch.Linq" />
     <PackageReference Include="Sitecore.LayoutService" />
-    <PackageReference Include="Sitecore.Assemblies.Platform" />
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
   </ItemGroup>
   <ItemGroup>
