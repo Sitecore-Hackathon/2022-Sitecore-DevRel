@@ -13,15 +13,18 @@
     "prettier-fix": "prettier --write ."
   },
   "devDependencies": {
+    "@swc/core": "^1.2.138",
     "husky": "^7.0.4",
     "prettier": "^2.5.1",
-    "turbo": "^1.1.2",
-    "@swc/core": "^1.2.138"
+    "turbo": "^1.1.2"
   },
   "husky": {
     "hooks": {
       "pre-commit": "turbo run lint"
     }
   },
-  "packageManager": "yarn@1.22.17"
+  "packageManager": "yarn@1.22.17",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }
