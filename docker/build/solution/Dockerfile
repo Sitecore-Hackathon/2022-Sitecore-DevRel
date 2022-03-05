@@ -43,3 +43,4 @@ WORKDIR /artifacts
 
 # Copy in all artifacts from build
 COPY --from=builder /build/docker/deploy/ ./
+COPY --from=builder /build/src/Project/NextStore/rendering ./rendering

@@ -92,11 +92,12 @@ services:
       context: ./build/rendering
       args:
         PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
-    volumes:
-      - ${JSS_PROJECT_ROOTFOLDER}:C:\app
+        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+    # volumes:
+    #   - ${JSS_PROJECT_ROOTFOLDER}:C:\app
     mem_limit: ${MEM_LIMIT_RENDERING:-4GB}
     ports:
-      - 9229:9229  
+      - 3000:3000  
     depends_on:
       - cm
       - nodejs

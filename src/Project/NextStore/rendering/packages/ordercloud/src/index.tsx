@@ -1,5 +1,5 @@
 import { ordercloudProvider, OrdercloudProvider } from './provider'
-import { getCommerceProvider, useCommerce as useCoreCommerce } from '../../commerce/src'
+import { getCommerceProvider, useCommerce as useCoreCommerce } from '@vercel/commerce'
 
 export { ordercloudProvider }
 export type { OrdercloudProvider }

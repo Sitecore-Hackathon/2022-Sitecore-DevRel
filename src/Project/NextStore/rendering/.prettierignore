@@ -1,1 +1,5 @@
-package.json
+# Every package defines its prettier config
+node_modules
+dist
+.next
+public

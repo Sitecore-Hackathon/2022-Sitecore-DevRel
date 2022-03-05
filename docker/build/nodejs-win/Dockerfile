@@ -18,3 +18,5 @@ RUN del node.zip
 USER ContainerAdministrator
 RUN SETX /M PATH "%PATH%;C:\node"
 USER ContainerUser
+
+RUN npm i -g yarn
