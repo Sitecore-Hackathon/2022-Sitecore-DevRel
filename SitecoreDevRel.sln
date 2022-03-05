@@ -29,9 +29,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Docker", "_Docker", "{7A26
 		docker\docker-compose.yml = docker\docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NextStore", "NextStore", "{E681313F-092E-4466-BE31-3F556034C316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreDevRel.Project.NextStore", "src\Project\NextStore\platform\SitecoreDevRel.Project.NextStore.csproj", "{816F099C-E14B-4468-9E34-87F993C6484D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E681313F-092E-4466-BE31-3F556034C316} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{816F099C-E14B-4468-9E34-87F993C6484D} = {E681313F-092E-4466-BE31-3F556034C316}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
