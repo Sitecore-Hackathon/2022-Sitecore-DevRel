@@ -68,7 +68,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="pt-6 pb-10 flex flex-col md:flex-row justify-between items-center space-y-4 text-accent-6 text-sm">
           <div>
-            <span>&copy; 2022 Sitecore - DevRel.</span>
+            <span>&copy; 2022 DEVREL, Inc. All rights reserved.</span>
           </div>
           <div className="flex items-center text-primary text-sm">
             <span className="text-primary">Created by: Dylan, Andrew &amp; Rob</span>
