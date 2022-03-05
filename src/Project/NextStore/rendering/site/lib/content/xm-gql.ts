@@ -4,14 +4,13 @@ export type XmRouteDetails = {
     title: string
   }
 
-export async function getRouteDetailsFromXM ({
-  //  path,
-  }: String ) {
-    
-    //var fullpath = path
+export async function getRouteDetailsFromXM (
+    path : any ) {
+
+    console.log(path)
     const query = `
     {
-      item(path: "/sitecore/content/NextStore/home/") {
+      item(path: "/sitecore/content/NextStore/${path}") {
         id
         path
         fields (ownFields:true) {
@@ -36,9 +35,10 @@ export async function getRouteDetailsFromXM ({
       }, { httpsAgent: agent });
     
     var gqlData = response.data; 
+    const title = gqlData?.data?.item?.fields[0]?.value;
 
     const routeDetails : XmRouteDetails = {
-        title : gqlData?.data?.item?.fields[0]?.value
+        title : title ? title + ' - This text is from XM!' : path
     } 
 
     return routeDetails;

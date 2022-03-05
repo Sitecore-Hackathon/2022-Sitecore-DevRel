@@ -25,7 +25,8 @@ export async function getStaticProps({
   const { products } = await productsPromise
   const { pages } = await pagesPromise
   const { categories, brands } = await siteInfoPromise
-  const xmRouteDetails: any = await getRouteDetailsFromXM("")
+
+  const xmRouteDetails: any = await getRouteDetailsFromXM("home/")
 
   return {
     props: {
