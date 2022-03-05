@@ -1,5 +1,5 @@
 import { FC, memo } from 'react'
-import rangeMap from 'lib/nextjs-commerce/range-map'
+import rangeMap from '@lib/range-map'
 import { Star } from '@components/icons'
 import cn from 'clsx'
 

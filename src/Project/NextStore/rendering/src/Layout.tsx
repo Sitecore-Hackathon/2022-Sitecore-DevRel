@@ -5,11 +5,12 @@ import deepEqual from 'deep-equal';
 import { useI18n } from 'next-localization';
 import {
   Placeholder,
-  VisitorIdentification,
   withSitecoreContext,
   getPublicUrl,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { StyleguideSitecoreContextValue } from 'lib/component-props';
+import { CommerceProvider } from '@framework'
+import { useRouter } from 'next/router'
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -53,6 +54,8 @@ interface LayoutProps {
   sitecoreContext: StyleguideSitecoreContextValue;
 }
 
+const  locale = 'en-US';
+
 const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
   return (
     <>
@@ -61,20 +64,17 @@ const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
       </Head>
 
-      {/*
-        VisitorIdentification is necessary for Sitecore Analytics to determine if the visitor is a robot.
-        If Sitecore XP (with xConnect/xDB) is used, this is required or else analytics will not be collected for the JSS app.
-        For XM (CMS-only) apps, this should be removed.
+      <CommerceProvider locale={locale}>
 
-        VI detection only runs once for a given analytics ID, so this is not a recurring operation once cookies are established.
-      */}
-      <VisitorIdentification />
+        <Navigation />
+        {/* root placeholder for the app, which we add components to using route data */}
+        <div className="container">
+          <Placeholder name="jss-main" rendering={route} />
+        </div>
+        
+      </CommerceProvider>
 
-      <Navigation />
-      {/* root placeholder for the app, which we add components to using route data */}
-      <div className="container">
-        <Placeholder name="jss-main" rendering={route} />
-      </div>
+
     </>
   );
 };

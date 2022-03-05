@@ -1,6 +1,6 @@
 import { FC, useRef, useEffect, useCallback } from 'react'
 import s from './Modal.module.css'
-import FocusTrap from 'lib/nextjs-commerce/focus-trap'
+import FocusTrap from '@lib/focus-trap'
 import { Cross } from '@components/icons'
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 

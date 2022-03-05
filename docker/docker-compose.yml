@@ -99,8 +99,8 @@ services:
     depends_on:
       mssql:
         condition: service_healthy
-      mssql-init:
-        condition: service_completed_successfully 
+      # mssql-init:
+      #   condition: service_completed_successfully 
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.id-secure.entrypoints=websecure"
@@ -113,8 +113,8 @@ services:
     depends_on:
       mssql:
         condition: service_healthy
-      mssql-init:
-        condition: service_completed_successfully        
+      # mssql-init:
+      #   condition: service_completed_successfully        
       solr:
         condition: service_started
       id:

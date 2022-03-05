@@ -3,13 +3,9 @@ import Router from 'next/router';
 import { I18nProvider } from 'next-localization';
 import NProgress from 'nprogress';
 
-// Using bootstrap and nprogress are completely optional.
-//  bootstrap is used here to provide a clean layout for samples, without needing extra CSS in the sample app
-//  nprogress provides a loading indicator on page/route changes
-// Remove these in package.json as well if removed here.
-import 'bootstrap/dist/css/bootstrap.css';
-import 'nprogress/nprogress.css';
-import 'assets/app.css';
+import 'assets/main.css'
+import 'assets/chrome-bug.css'
+import 'keen-slider/keen-slider.min.css'
 
 NProgress.configure({ showSpinner: false, trickleSpeed: 100 });
 

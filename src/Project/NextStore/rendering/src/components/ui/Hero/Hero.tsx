@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Container } from '@components/ui'
+import Container from '@components/ui/Container/Container'
 import { ArrowRight } from '@components/icons'
 import s from './Hero.module.css'
 import Link from 'next/link'

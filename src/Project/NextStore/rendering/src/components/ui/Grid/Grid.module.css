@@ -1,4 +1,4 @@
-.root {
+/* .root {
   @apply grid grid-cols-1 gap-0;
 }
 .root > * {
@@ -132,4 +132,4 @@
   .layoutNormal > * {
     max-height: 400px;
   }
-}
+} */

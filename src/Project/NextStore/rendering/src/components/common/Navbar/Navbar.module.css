@@ -1,4 +1,4 @@
-.root {
+/* .root {
   @apply sticky top-0 bg-primary z-40 transition-all duration-150;
   min-height: 74px;
 }
@@ -32,4 +32,4 @@
     @apply shadow-md;
     transform: scale(1.05);
   }
-}
+} */

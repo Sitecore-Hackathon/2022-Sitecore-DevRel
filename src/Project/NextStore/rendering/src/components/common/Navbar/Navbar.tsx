@@ -2,9 +2,10 @@ import { FC } from 'react'
 import Link from 'next/link'
 import s from './Navbar.module.css'
 import NavbarRoot from './NavbarRoot'
-import Logo from '@components/ui/Logo'
-import Container from '@components/ui/Container'
-import { Searchbar, UserNav } from '@components/common'
+import Logo from '@components/ui/Logo/Logo'
+import Container from '@components/ui/Container/Container'
+import Searchbar from '@components/common/Searchbar/Searchbar'
+import UserNav from '@components/common/UserNav/UserNav'
 
 interface Link {
   href: string

@@ -1,4 +1,4 @@
-.root {
+/* .root {
   @apply border-t border-accent-2;
 }
 
@@ -10,4 +10,4 @@
   &:hover > svg {
     @apply scale-110;
   }
-}
+} */

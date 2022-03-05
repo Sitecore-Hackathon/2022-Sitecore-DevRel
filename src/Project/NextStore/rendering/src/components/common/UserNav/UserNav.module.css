@@ -1,4 +1,4 @@
-.root {
+/* .root {
   @apply relative flex items-center;
 }
 
@@ -42,4 +42,4 @@
 .avatarButton:focus,
 .mobileMenu:focus {
   @apply outline-none;
-}
+} */

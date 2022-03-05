@@ -1,5 +1,5 @@
-import { HookFetcher } from '@vercel/commerce/utils/types'
-import type { Product } from '@vercel/commerce/types/product'
+import { HookFetcher } from '../../../commerce/src/utils/types'
+import type { Product } from '../../../commerce/src/types/product'
 
 const defaultOpts = {}
 

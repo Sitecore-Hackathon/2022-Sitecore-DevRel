@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import { FC, useState } from 'react'
-import CartItem from '@components/cart/CartItem'
-import { Button, Text } from '@components/ui'
+import CartItem from '@components/cart/CartItem/CartItem'
+import Button from '@components/ui/Button/Button'
+import Text from '@components/ui/Text/Text'
 import { useUI } from '@components/ui/context'
-import SidebarLayout from '@components/common/SidebarLayout'
+import SidebarLayout from '@components/common/SidebarLayout/SidebarLayout'
 import useCart from '@framework/cart/use-cart'
 import usePrice from '@framework/product/use-price'
 import useCheckout from '@framework/checkout/use-checkout'
-import ShippingWidget from '../ShippingWidget'
-import PaymentWidget from '../PaymentWidget'
+import ShippingWidget from '../ShippingWidget/ShippingWidget'
+import PaymentWidget from '../PaymentWidget/PaymentWidget'
 import s from './CheckoutSidebarView.module.css'
-import { useCheckoutContext } from '../context'
+import { useCheckoutContext } from '../checkoutContext'
 
 const CheckoutSidebarView: FC = () => {
   const [loadingSubmit, setLoadingSubmit] = useState(false)

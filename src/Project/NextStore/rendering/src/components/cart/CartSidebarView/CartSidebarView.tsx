@@ -2,13 +2,14 @@ import cn from 'clsx'
 import Link from 'next/link'
 import { FC } from 'react'
 import s from './CartSidebarView.module.css'
-import CartItem from '../CartItem'
-import { Button, Text } from '@components/ui'
+import CartItem from '../CartItem/CartItem'
+import Button from '@components/ui/Button/Button'
+import Text from '@components/ui/Text/Text'
 import { useUI } from '@components/ui/context'
 import { Bag, Cross, Check } from '@components/icons'
 import useCart from '@framework/cart/use-cart'
 import usePrice from '@framework/product/use-price'
-import SidebarLayout from '@components/common/SidebarLayout'
+import SidebarLayout from '@components/common/SidebarLayout/SidebarLayout'
 
 const CartSidebarView: FC = () => {
   const { closeSidebar, setSidebarView } = useUI()

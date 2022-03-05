@@ -2,12 +2,12 @@ import Link from 'next/link'
 import s from './MenuSidebarView.module.css'
 import { FC } from 'react'
 import { useUI } from '@components/ui/context'
-import SidebarLayout from '@components/common/SidebarLayout'
-import { Link as LinkProps} from '.'
+import SidebarLayout from '@components/common/SidebarLayout/SidebarLayout'
+//import { Link as LinkProps} from '.'
 
 
 interface MenuProps {
-  links?: LinkProps[]
+  links?: []// LinkProps[]
 }
 
 const MenuSidebarView: FC<MenuProps> = (props) => {

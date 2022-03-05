@@ -8,7 +8,7 @@ import type { LineItem } from '@commerce/types/cart'
 import usePrice from '@framework/product/use-price'
 import useUpdateItem from '@framework/cart/use-update-item'
 import useRemoveItem from '@framework/cart/use-remove-item'
-import Quantity from '@components/ui/Quantity'
+import Quantity from '@components/ui/Quantity/Quantity'
 
 type ItemOption = {
   name: string

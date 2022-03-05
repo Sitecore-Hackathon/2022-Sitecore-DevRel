@@ -14,7 +14,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "incremental": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@vercel/*": ["../commerce/src*"],
+      "@vercel": ["../commerce/src"]
+    },
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

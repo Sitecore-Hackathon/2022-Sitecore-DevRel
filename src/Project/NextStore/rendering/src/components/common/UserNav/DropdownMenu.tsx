@@ -4,10 +4,10 @@ import { FC, useRef, useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router'
 import s from './DropdownMenu.module.css'
-import Avatar from '@components/common/Avatar'
+import Avatar from '@components/common/Avatar/Avatar'
 import { Moon, Sun } from '@components/icons'
 import { useUI } from '@components/ui/context'
-import ClickOutside from 'lib/nextjs-commerce/click-outside'
+import ClickOutside from '@lib/click-outside'
 import useLogout from '@framework/auth/use-logout'
 
 import {

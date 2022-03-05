@@ -1,8 +1,8 @@
-import type { GetCheckoutHook } from '@vercel/commerce/types/checkout'
+import type { GetCheckoutHook } from '../../../commerce/src/types/checkout'
 
 import { useMemo } from 'react'
-import { SWRHook } from '@vercel/commerce/utils/types'
-import useCheckout, { UseCheckout } from '@vercel/commerce/checkout/use-checkout'
+import { SWRHook } from '../../../commerce/src/utils/types'
+import useCheckout, { UseCheckout } from '../../../commerce/src/checkout/use-checkout'
 import useSubmitCheckout from './use-submit-checkout'
 
 export default useCheckout as UseCheckout<typeof handler>

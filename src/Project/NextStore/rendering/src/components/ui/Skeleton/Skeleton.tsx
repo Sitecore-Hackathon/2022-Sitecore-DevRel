@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react'
 import cn from 'clsx'
-import px from 'lib/nextjs-commerce/to-pixels'
+import px from '@lib/to-pixels'
 import s from './Skeleton.module.css'
 
 interface SkeletonProps {

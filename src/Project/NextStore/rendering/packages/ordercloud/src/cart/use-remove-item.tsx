@@ -1,13 +1,13 @@
 import type {
   MutationHookContext,
   HookFetcherContext,
-} from '@vercel/commerce/utils/types'
-import type { Cart, LineItem, RemoveItemHook } from '@vercel/commerce/types/cart'
+} from '../../../commerce/src/utils/types'
+import type { Cart, LineItem, RemoveItemHook } from '../../../commerce/src/types/cart'
 
 import { useCallback } from 'react'
 
-import { ValidationError } from '@vercel/commerce/utils/errors'
-import useRemoveItem, { UseRemoveItem } from '@vercel/commerce/cart/use-remove-item'
+import { ValidationError } from '../../../commerce/src/utils/errors'
+import useRemoveItem, { UseRemoveItem } from '../../../commerce/src/cart/use-remove-item'
 
 import useCart from './use-cart'
 
