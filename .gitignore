@@ -48,5 +48,9 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
+
 #Nuget packages folder
 packages/
+
+#allow nextjs packages folder
+!static_nextjs_commerce/packages
