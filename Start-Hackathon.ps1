@@ -54,7 +54,7 @@ if (Test-IsEnvInitialized -FilePath ".\docker\.env" ) {
             throw "Required variable 'HOST_DOMAIN' not set in .env file."
         }
         Initialize-HostNames $hostDomain
-        Start-Docker -Url "$($hostDomain)/sitecore" -Build
+        Start-Docker -Url "$(Get-EnvValueByKey "CM_HOST")/sitecore" -Build
         exit 0
     }
     Start-Docker -Url "$(Get-EnvValueByKey "CM_HOST")/sitecore"

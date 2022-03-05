@@ -72,14 +72,15 @@ f. ex.
 
 1. Clone the repository: `git clone https://github.com/Sitecore-Hackathon/2022-Sitecore-DevRel.git`.
 2. Copy sitecore license.xml to `/docker/License` folder
-3. Run `Start-Hackathon.ps1`
+3. Run `Start-Hackathon.ps1` - Note: this tends to launch the browser too soon, you'll have to check the docker status
 4. Ensure all containers are healthy
 5. Deserialise Sitecore content by running the following commands from the root of the repo
    * `dotnet tool restore`
    * `dotnet sitecore login --cm https://cm.sitecoredevrel.localhost/ --auth https://id.sitecoredevrel.localhost/ --allow-write true`
+      - Credentials are admin/b
    * `dotnet sitecore ser push --publish`
 
-6. From the command line, navigate to the `/src/project/NextStore/rendering` folder.
+6. From the command line, navigate to the `./src/project/NextStore/rendering` folder.
 7. Run:
    * `npm i`
    * `yarn install`
