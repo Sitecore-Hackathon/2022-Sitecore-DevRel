@@ -34,9 +34,7 @@
 _You can alternately paste a [link here](#docs) to a document within this repo containing the description._
 
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
-⟹ [Replace this Video link](#video-link)
+⟹ [Video link](https://www.youtube.com/watch?v=95Mw6sOHykk&t=248s)
 
 
 
