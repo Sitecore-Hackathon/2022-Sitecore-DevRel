@@ -1,5 +1,5 @@
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-# Sitecore Hackathon 2022
+# Hackathon Submission Entry Form
 
 ## Team name
 Sitecore DevRel
